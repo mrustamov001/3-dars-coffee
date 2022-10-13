@@ -1,0 +1,204 @@
+.collection__title {
+    font-weight: 900;
+    font-size: 150px;
+    line-height: 72px;
+    color: rgba(131, 136, 143, 0.7);
+    background: -webkit-linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(202, 202, 202, 0.5);
+    text-align: center;
+}
+
+.collection__title::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+ }
+
+*,::before,::after {
+box-sizing: border-box;
+}
+
+
+.container {
+    width: 1310px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* benefits section */
+
+
+
+.benefits{
+    position: relative;
+    margin-top: 188px;
+    color: #fff;
+
+}
+.benefits::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2C343E;
+    border-radius: 10px;
+    padding: 100px 85px 286px 85px;
+    color: #FEFCF7;
+    content: '';
+}
+.benefits__wrapper{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+.benefits__title{
+    font-family: "Fraunces";
+    font-weight: 900;
+    font-size: 40px;
+    margin: 0 0 32px 0;
+}
+
+
+.benefits__list{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+.benefits__list-item{
+    background: #0E8784;
+    border-radius: 8px;
+    width: 350px;
+    padding-top: 72px;
+    text-align: center;
+    margin-top: 86px;
+    margin-right: 30px;
+    
+}
+.benefits__list-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+.benefits__list-item::before{
+    background: url("../images/surprize.svg") no-repeat center center;
+    content: '';
+    display: block;
+    width: 71px;
+    height: 71px;
+    margin-left: 130px;
+    
+}
+.benefits__list-title{
+    margin-top: 56px;
+    margin-bottom: 24px;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.benefits__list-item-Exclusive::before{
+    background: url("../images/surprize.svg") no-repeat center center;
+    content: '';
+    display: block;
+    width: 71px;
+    height: 71px;
+    margin-left: 130px;
+}
+
+.benefits__list-item-shipping::before{
+    background: url("../images/surprize.svg") no-repeat center center;
+    content: '';
+    display: block;
+    width: 71px;
+    height: 71px;
+    margin-left: 130px;
+}
+@media only screen and (max-width: 1280px) {
+    .benefits{
+        padding: 70px 85px 360px 85px;
+    }
+    .benefits__list{
+        flex-direction: column;
+    }
+    .benefits__list-item{
+        width: 570px;
+        height: 190px;
+        background: #0E8784;
+        border-radius: 8px;
+        display: flex;
+        padding: 41px 48px 41px 100px;
+    }
+    .benefits__list-item-wrapper{
+        flex-direction: column;
+        
+    }
+    .benefits__list-title{
+        margin-top: 0;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        width: 255px;
+        text-align: left;
+    }
+    .benefits__list-descriptiom{
+        width: 344px;
+        text-align: left;
+    }
+    .benefits__list-item::before{
+        content: '';
+        display: block;
+        width: 55px;
+        height: 56px;
+        margin: 20px 50px 0 0;
+        padding-left: 0px;
+        background-size: contain;
+    }
+    .benefits__list-item-Exclusive{
+       
+        width: 570px;
+        height: 190px;
+        background: #0E8784;
+        border-radius: 8px;
+        display: flex;
+        padding: 41px 48px 41px 100px;
+        margin: 24px 0;
+    }
+    .benefits__list-item-Exclusive::before{
+        content: '';
+        display: block;
+        width: 56px;
+        height: 56px;
+        margin: 20px 50px 0 0;
+        padding-left: 70px;
+        background-size: contain;
+    
+    }
+    .benefits__list-item-shipping{
+        width: 570px;
+        height: 190px;
+        background: #0E8784;
+        border-radius: 8px;
+        display: flex;
+        padding: 41px 48px 41px 100px;
+        margin: 0; 
+        
+    }
+    .benefits__list-item-shipping::before{
+        content: '';
+        display: block;
+        width: 56px;
+        height: 56px;
+        margin: 20px 50px 0 0;
+        padding-left: 70px;
+        background-size: contain;
+    }
+}
